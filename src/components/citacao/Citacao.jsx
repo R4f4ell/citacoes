@@ -6,13 +6,13 @@ function Citacao({ texto, autor, proximaCitacao }) {
   const [idiomAtual, setIdiomaAtual] = useState("pt");
   const [carregando, setCarregando] = useState(false);
 
-  // Resetar a tradução quando o texto da citação mudar
+  
   useEffect(() => {
     setTraducao("");
     setIdiomaAtual("pt");
   }, [texto]);
 
-  // Traduções para todas as citações do seu data.js
+  
   const traducoes = {
     en: {
       "A vida não é mais que um sonho; mas nesse sonho não há nem riso nem prazer.": "Life is nothing but a dream; but in this dream there is neither laughter nor pleasure.",
@@ -94,9 +94,7 @@ function Citacao({ texto, autor, proximaCitacao }) {
           <cite>{autor}</cite>
         </footer>
       </blockquote>
-      
-      
-      
+       
       <div className="controls-container">
         <div className="btn-group" role="group">
           <button
