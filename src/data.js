@@ -1,5 +1,3 @@
-// src/data.js
-
 const citacoes = [
   {
     autor: "Machado de Assis",

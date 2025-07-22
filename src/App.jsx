@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Citacao from "./components/Citacao";
+import Citacao from "./components/citacao/Citacao";
 import citacoes from "./data";
 
 function App() {
@@ -11,10 +11,15 @@ function App() {
 
   return (
     <div className="container mt-5">
-      <Citacao texto={citacoes[indice].texto} autor={citacoes[indice].autor} />
-      <button className="btn btn-success mt-2" onClick={proximaCitacao}>
-        Próxima Citação
-      </button>
+      <div className="row justify-content-center">
+        <div className="col-md-8">
+          <Citacao 
+            texto={citacoes[indice].texto} 
+            autor={citacoes[indice].autor} 
+            proximaCitacao={proximaCitacao}
+          />
+        </div>
+      </div>
     </div>
   );
 }
