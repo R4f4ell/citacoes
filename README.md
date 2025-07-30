@@ -8,5 +8,5 @@ Site responsivo com template básico dando ênfase na funcionalidade do projeto.
 - SCSS (modular e escalável)
   
 ## 🔗 Links
-- Projeto online: https://citacoes-three.vercel.app/
+- Projeto online: https://citacoes.rafaelldev.com
 - Código-fonte: https://github.com/R4f4ell/citacoes
